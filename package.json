@@ -1,7 +1,6 @@
 {
   "name": "Bootstrap",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,5 +11,14 @@
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.12.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pli95/BootstrapProject2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pli95/BootstrapProject2/issues"
+  },
+  "homepage": "https://github.com/Pli95/BootstrapProject2#readme",
+  "description": ""
 }
