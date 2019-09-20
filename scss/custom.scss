@@ -10,13 +10,16 @@ nav {
 }
 
 #carouselExampleIndicators {
-  img {
+  .carousel-inner {
     height: 500px;
-    object-fit: cover;
-    vertical-align: middle;
+    img {
+      height: 500px;
+      object-fit: cover;
+      vertical-align: middle;
+    }
   }
 
-  @media only screen and (min-width: $bigScreen ){
+  @media only screen and (min-width: $bigScreen) {
     .carousel-indicators, a {
       opacity: .1;
     }
@@ -24,8 +27,14 @@ nav {
     .carousel-indicators:hover, a:hover {
       opacity: 1;
     }
+    .carousel-inner {
+      img {
+        height: 900px;
+      }
+    }
   }
 }
+
 .jumbotron {
   margin: 0;
   background-color: $shell;
@@ -37,6 +46,7 @@ nav {
   background-color: $grape;
   border: $grape;
 }
+
 .btn:hover {
   background-color: $eggplant;
   border: $eggplant;
@@ -55,20 +65,23 @@ footer {
     background-color: $eggplant;
     color: white;
   }
+
   .nav-link {
     background-color: $grape;
   }
+
   a {
     color: white;
   }
 
 }
 
-@media screen and(min-width: $bigScreen){
+@media screen and(min-width: $bigScreen) {
   .col-8 .scrollspy-example-2 {
     height: 875px;
   }
 }
+
 .scrollspy-example-2 {
   position: relative;
   height: 493px;
@@ -79,6 +92,7 @@ footer {
     flex-wrap: wrap;
     margin: 0 4px;
   }
+
   @media only screen and (min-width: $bigScreen) {
     .row .column {
       flex: 25%;
@@ -97,9 +111,19 @@ footer {
     }
   }
 }
+
 //about page
 .card {
+  width: 18rem;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: $bigScreen) {
+  body {
+    .card {
+      width: 34rem;
+    }
+  }
 }
 
 .formContainer {

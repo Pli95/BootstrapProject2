@@ -1,16 +1,20 @@
 nav {
   background-color: #94618E; }
 
-#carouselExampleIndicators img {
-  height: 500px;
-  object-fit: cover;
-  vertical-align: middle; }
+#carouselExampleIndicators .carousel-inner {
+  height: 500px; }
+  #carouselExampleIndicators .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    vertical-align: middle; }
 
 @media only screen and (min-width: 1100px) {
   #carouselExampleIndicators .carousel-indicators, #carouselExampleIndicators a {
     opacity: .1; }
   #carouselExampleIndicators .carousel-indicators:hover, #carouselExampleIndicators a:hover {
-    opacity: 1; } }
+    opacity: 1; }
+  #carouselExampleIndicators .carousel-inner img {
+    height: 900px; } }
 
 .jumbotron {
   margin: 0;
@@ -66,7 +70,12 @@ footer {
       margin-top: 4px; }
 
 .card {
+  width: 18rem;
   margin: 0 auto; }
+
+@media only screen and (min-width: 1100px) {
+  body .card {
+    width: 34rem; } }
 
 .formContainer {
   padding-bottom: 20px; }
